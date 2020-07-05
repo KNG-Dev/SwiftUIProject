@@ -25,9 +25,14 @@ struct HomeView: View {
             .padding(.top, 30)
             
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 30) {
+                HStack(spacing: 20) {
                     ForEach(sectionData) { item in
-                        SectionView(section: item)
+                        GeometryReader { geometry in
+                            SectionView(section: item)
+                                //If using vertical, use minY
+                                .rotation3DEffect(Angle(degrees: Double(geometry.frame(in: .global).minX - 30) / -20), axis: (x: 0.0, y: 10.0, z: 0))
+                        }
+                    .frame(width: 275, height: 275)
                     }
                 }
                     
