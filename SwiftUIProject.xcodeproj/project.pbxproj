@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		341C657A24B22EBD003E60A2 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C657924B22EBD003E60A2 /* MenuView.swift */; };
 		341C657C24B2354C003E60A2 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C657B24B2354B003E60A2 /* Home.swift */; };
+		341C657E24B27B07003E60A2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341C657D24B27B06003E60A2 /* HomeView.swift */; };
 		34E90B7924269C20005F73BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E90B7824269C20005F73BE /* AppDelegate.swift */; };
 		34E90B7B24269C20005F73BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E90B7A24269C20005F73BE /* SceneDelegate.swift */; };
 		34E90B7D24269C20005F73BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E90B7C24269C20005F73BE /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		341C657924B22EBD003E60A2 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		341C657B24B2354B003E60A2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		341C657D24B27B06003E60A2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		34E90B7524269C20005F73BE /* SwiftUIProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E90B7824269C20005F73BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34E90B7A24269C20005F73BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				34E90B7A24269C20005F73BE /* SceneDelegate.swift */,
 				34E90B7C24269C20005F73BE /* ContentView.swift */,
 				341C657B24B2354B003E60A2 /* Home.swift */,
+				341C657D24B27B06003E60A2 /* HomeView.swift */,
 				341C657924B22EBD003E60A2 /* MenuView.swift */,
 				34E90B7E24269C22005F73BE /* Assets.xcassets */,
 				34E90B8324269C22005F73BE /* LaunchScreen.storyboard */,
@@ -155,6 +158,7 @@
 				34E90B7924269C20005F73BE /* AppDelegate.swift in Sources */,
 				341C657A24B22EBD003E60A2 /* MenuView.swift in Sources */,
 				341C657C24B2354C003E60A2 /* Home.swift in Sources */,
+				341C657E24B27B07003E60A2 /* HomeView.swift in Sources */,
 				34E90B7B24269C20005F73BE /* SceneDelegate.swift in Sources */,
 				34E90B7D24269C20005F73BE /* ContentView.swift in Sources */,
 			);
