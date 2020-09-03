@@ -45,7 +45,7 @@ struct CourseList: View {
                     
                 .frame(width: screen.width)
                 .animation(.spring(response: 0.5, dampingFraction: 0.6, blendDuration: 0))
-            
+                
             }
             .statusBar(hidden: active ? true : false)
             .animation(.linear)
@@ -154,13 +154,11 @@ struct CourseView: View {
                                 }
                                 self.activeView = .zero
                                 
-                                }
-                        )
+                            })
                         
                         //Disable Hue when dragging in small view
                         : nil
             )
-                
                 .onTapGesture {
                     self.show.toggle()
                     self.active.toggle()
@@ -171,9 +169,13 @@ struct CourseView: View {
                         self.activeIndex = -1
                     }
             }
+            
+            if show {
+//                CourseDetail(course: course, show: $show, active: $active, activeIndex: $activeIndex)
+//                    .background(Color.white)
+//                .animation(nil)
+            }
         }
-            
-            
             
         .frame(height: show ? screen.height : 280)
         .scaleEffect(1 - self.activeView.height / 1000)
@@ -191,7 +193,7 @@ struct CourseView: View {
                     //Disables dragging up to dismiss
                     guard value.translation.height > 0 else { return }
                     
-                    self.activeView = value.translation
+//                    self.activeView = value.translation
                     
                 })
                     .onEnded({ (value) in
@@ -208,7 +210,7 @@ struct CourseView: View {
                 //Disable Hue when dragging in small view
                 : nil
         )
-        .edgesIgnoringSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
