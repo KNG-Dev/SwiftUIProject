@@ -30,7 +30,6 @@ struct CourseDetail: View {
                         Spacer()
                         
                         ZStack {
-                            
                             VStack {
                                 Image(systemName: "xmark")
                                     .font(.system(size: 16, weight: .medium))

@@ -55,7 +55,10 @@ struct CourseList: View {
 
 struct CourseList_Previews: PreviewProvider {
     static var previews: some View {
-        CourseList()
+        Group {
+            CourseList()
+            
+        }
     }
 }
 
@@ -132,7 +135,6 @@ struct CourseView: View {
                 .shadow(color: Color(course.color).opacity(0.3), radius: 20, x: 0, y: 20)
                 
                 
-                
                 .gesture(
                     show ?
                         DragGesture().onChanged({value in
@@ -173,7 +175,7 @@ struct CourseView: View {
             if show {
 //                CourseDetail(course: course, show: $show, active: $active, activeIndex: $activeIndex)
 //                    .background(Color.white)
-//                .animation(nil)
+//                    .animation(nil)
             }
         }
             
@@ -193,7 +195,7 @@ struct CourseView: View {
                     //Disables dragging up to dismiss
                     guard value.translation.height > 0 else { return }
                     
-//                    self.activeView = value.translation
+                    self.activeView = value.translation
                     
                 })
                     .onEnded({ (value) in
@@ -228,5 +230,4 @@ var courseData = [
     Course(title: "Prototype designs in Swift UI", subtitle: "18 Sections", image: #imageLiteral(resourceName: "Background1"), logo: #imageLiteral(resourceName: "Logo1"), color: UIColor.systemRed, show: false),
     Course(title: "Build a SwiftUI App", subtitle: "18 Sections", image: #imageLiteral(resourceName: "Card6"), logo: #imageLiteral(resourceName: "Logo2"), color: #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1), show: false),
     Course(title: "UI Design for Developers", subtitle: "25 Sections", image: #imageLiteral(resourceName: "Card1"), logo: #imageLiteral(resourceName: "Logo3"), color: #colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1), show: false),
-    
 ]
